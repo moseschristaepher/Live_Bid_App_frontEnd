@@ -42,6 +42,14 @@
 
 @import "containers/popular-items-component";
 
+@import "containers/discover-item-container";
+
+@import "containers/discover-items-component";
+
+@import "containers/other-bids-component";
+
+@import "containers/otherbid-container";
+
 ///////// REUSABLE COMPONENTS ///////////////
 
 @import "components/reusable_components/bid-card-component";
@@ -56,6 +64,8 @@
 
 @import "components/reusable_components/button-component";
 
+@import "components/reusable_components/button-small-component";
+
 @import "components/reusable_components/feature-box-component";
 
 @import "components/reusable_components/popular-item-component";
@@ -63,3 +73,5 @@
 @import "components/reusable_components/bid-ends-components";
 
 @import "components/reusable_components/bid-badge-component";
+
+@import "components/reusable_components/discover-item-component";

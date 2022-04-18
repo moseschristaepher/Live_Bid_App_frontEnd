@@ -35,9 +35,9 @@
 .section--discoverItem {
     grid-column: 1 / 13;
 
-    padding: 0 6rem;
+    padding: 7rem 6rem;
 
-    // background-color: rgb(224, 75, 38);
+    background-color:  #1f0757;
     display: grid;
     grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
 }
@@ -45,9 +45,9 @@
 .section--otherbid {
     grid-column: 1 / 13;
 
-    padding: 0 6rem;
+    padding: 5 6rem;
 
-    // background-color: rgb(38, 174, 224);
+    background-color: rgb(38, 174, 224);
     display: grid;
     grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
 }
@@ -57,7 +57,7 @@
 
     padding: 0 6rem;
 
-    // background-color: rgb(224, 38, 38);
+    background-color: rgb(224, 38, 38);
     display: grid;
     grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
 }
@@ -67,7 +67,7 @@
 
     padding: 0 6rem;
 
-    // background-color: rgb(43, 85, 37);
+    background-color: rgb(43, 85, 37);
     display: grid;
     grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
 }

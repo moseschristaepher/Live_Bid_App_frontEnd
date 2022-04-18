@@ -1,10 +1,10 @@
 import BidcardsComponent from "../components/containers/bid-cards-component";
 import DiscoverItemsComponent from "../components/containers/discover-items-component";
 import FeaturesBoxesComponent from "../components/containers/feature-boxes-component";
-import OtherBidsComponent from "../components/containers/other-bids-component";
+// import OtherBidsComponent from "../components/containers/other-bids-component";
 import PopularItemsComponent from "../components/containers/popular-items-container";
-import TopBuyersComponent from "../components/containers/top-buyer-component";
-import TopSellersComponent from "../components/containers/top-sellers-component";
+// import TopBuyersComponent from "../components/containers/top-buyer-component";
+// import TopSellersComponent from "../components/containers/top-sellers-component";
 import HeadingTertiaryComponent from "../components/typography_components/heading_tertiary_component";
 
 
@@ -58,19 +58,21 @@ const BidPage = (props) => {
                 </div>
             </section>
 
-            {/* <section class="section--discoverItem">
+            <section class="section--discoverItem">
                 <div class="discoverItem--container">
 
-                    <div class="discoverItem--container--box-1">
+                    <div class="discoverItem--container--box--1 u-margin-bottom-medium">
+
+                        <HeadingTertiaryComponent  h3text= "Discover Items"/>
 
                     </div>
 
-                    <div class="discoverItem--container--box-2">
+                    <div class="discoverItem--container--box--2">
 
                         
                     </div>
 
-                    <div class="discoverItem--container--box-3">
+                    <div class="discoverItem--container--box--3">
 
                         <DiscoverItemsComponent />
 
@@ -79,7 +81,7 @@ const BidPage = (props) => {
                 </div>
             </section>
 
-            <section class="section--otherbid">
+            {/* <section class="section--otherbid">
                 <div class="otherbid--container">
 
                     <div class="otherbid--container--box-1">
