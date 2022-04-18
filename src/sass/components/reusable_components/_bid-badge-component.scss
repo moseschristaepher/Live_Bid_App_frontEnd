@@ -1,0 +1,22 @@
+.bid--badge--component {
+
+    // display: flex;
+
+    & img {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    & h4 {
+
+        font-size: 1.3rem;
+        color: aliceblue
+
+    }
+
+}
+
+.icon--with--text--medium--component {
+    display: flex;
+}

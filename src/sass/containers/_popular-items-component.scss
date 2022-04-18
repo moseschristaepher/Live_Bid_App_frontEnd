@@ -1,0 +1,17 @@
+
+
+
+.popular--items--component {
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+}
+
+.popular--items--component > div{
+    
+    margin-bottom: 1.5rem;
+
+}

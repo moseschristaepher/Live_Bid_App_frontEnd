@@ -1,0 +1,29 @@
+
+
+
+.popularItem--container {
+    grid-column: 1 / 13;
+    // background-color: rgb(171, 34, 114);
+
+    // height: 45vh;
+
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+
+
+    &--box--1 {
+        grid-column: 1 /13;
+    }
+
+    &--box--1 h3{
+        font-size: 4rem;
+        color: aliceblue;
+    }
+
+    &--box--2 {
+
+        // height: 45vh;
+
+        grid-column: 1 /13;
+    }
+}

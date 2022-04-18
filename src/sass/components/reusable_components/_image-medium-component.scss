@@ -1,0 +1,15 @@
+.image--medium--component {
+    width: 244px;
+    height: 244px;
+
+    max-width: 100%;
+
+    // background-color: rgb(133, 58, 30);
+
+    & img {
+
+        width: 244px;
+        height: 244px;
+    
+    }
+}

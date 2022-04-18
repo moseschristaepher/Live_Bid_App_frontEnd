@@ -1,0 +1,16 @@
+
+
+.icon--with--text--small--component {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    & i {
+        font-size: 15px;
+    }
+
+    & p {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,135 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 2rem;
+        display: inline-block;
+        border-radius: 1rem;
+        transition: all .2s;
+        position: relative;
+        // for example if you have a client that the client asks to change the font 
+        // for that case if you set the default font size then you can easilyb change the font size and worked 
+        // on it so we set and use the default font size
+        // keep the variables in the reasonable level
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--green {
+        // for the button in the tours section we need to create an separate class
+        // we need to give color primary because it is our green color
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
+
+// next we need to work on the button in the about section
+// the same hover thing happening like when hover the button goes up and when we click the button it comes down like the header section button
+
+.btn-text {
+    &:link,
+    &:visited {
+        // color: $color-primary;
+        color: gray;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        // border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        // then we need to apply transition to all with the duration 
+        // then the all the effects will apllied
+
+        //// BUTTON THINGS GOES HERE /////
+        // padding: .3rem;
+
+    }
+
+    &:hover {
+        // background-color: rgb(118, 240, 118);
+        // color: $color-white;
+        // we are applying box shadow in the x and y direction and then blur itb 
+        // and then we need to apply the color into it and then give the opacity
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        // the same button effect at the header 
+        // when we hover the button it goes up
+        // and when we click the button it goes down
+        transform: translateY(-2px);
+        font-size: 1.5rem;
+        // border-bottom: 1px solid $color-primary;
+        padding: 3px;
+
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        border-bottom: 1px solid $color-primary;
+
+                // the same button effect at the header 
+        // when we hover the button it goes up
+        // and when we click the button it goes down
+        // when click we make the position to zero
+        // then we need to apply transition to all with the duration
+        transform: translateY(0);
+
+
+    }
+    &:focus {
+        border-bottom: 3px solid green;
+
+    }
+}

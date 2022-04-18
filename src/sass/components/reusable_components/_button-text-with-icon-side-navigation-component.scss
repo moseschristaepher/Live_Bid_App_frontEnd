@@ -1,0 +1,13 @@
+.buttons--text--with--icon--side--navigation--component {
+
+    padding: 0 1rem 0 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.buttons--text--with--icon--side--navigation--component > :not(:last-child) {
+    margin-bottom: 1.5rem;
+}

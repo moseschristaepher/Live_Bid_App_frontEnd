@@ -1,0 +1,76 @@
+.bid--card--component {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto ;
+    // align-items: center;
+    justify-content: center;
+
+    background-color: #0C153B;
+
+    width: 23%;
+    padding: 1.5rem;
+
+
+    border: solid 1px #404040;
+    border-radius: 2rem;
+
+    &--box--1 {
+
+        position: relative;
+
+        &--A {
+            position: absolute;
+            bottom: 3%;
+            right: 27%;
+        }
+
+        &--B {
+
+            position: absolute;
+            top: 6%;
+            left: 7%;
+
+            background-color: #212529;;
+
+            padding: .8rem;
+            border-radius: 1.5rem;
+
+            &  > div {
+                // width: 16px;
+                height: 16px;
+
+                // margin-right: .8rem;
+            }
+
+            & .img--small--component {
+                height: 16px;
+                width: 16px;
+                margin-right: .5rem;
+
+            }
+        }
+
+
+    }
+
+    &--box--1 img{
+
+        // border: solid 1px rgb(212, 212, 212);
+        border-radius: 2rem;
+
+    }
+
+    &--box--2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--box--3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // text-align: center;
+    }
+}

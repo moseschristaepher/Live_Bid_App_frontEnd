@@ -1,0 +1,73 @@
+.section--liveBid {
+    grid-column: 1 / 13;
+
+    padding: 5rem 6rem;
+
+    background-color: #030205;
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+}
+
+.section--features {
+    grid-column: 1 / 13;
+
+    padding: 3rem 6rem;
+
+    background-color: #030205;
+
+
+    // background-color: rgb(78, 38, 224);
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+}
+
+.section--popularItem {
+    grid-column: 1 / 13;
+
+    padding: 5rem 6rem;
+
+    background-color: #030205;
+    // background-color: rgb(224, 38, 146);
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+}
+
+.section--discoverItem {
+    grid-column: 1 / 13;
+
+    padding: 0 6rem;
+
+    // background-color: rgb(224, 75, 38);
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+}
+
+.section--otherbid {
+    grid-column: 1 / 13;
+
+    padding: 0 6rem;
+
+    // background-color: rgb(38, 174, 224);
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+}
+
+.section--get--started {
+    grid-column: 1 / 13;
+
+    padding: 0 6rem;
+
+    // background-color: rgb(224, 38, 38);
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+}
+
+.section--stay--connected {
+    grid-column: 1 / 13;
+
+    padding: 0 6rem;
+
+    // background-color: rgb(43, 85, 37);
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+}

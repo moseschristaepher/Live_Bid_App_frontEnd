@@ -1,0 +1,38 @@
+// COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONT
+/// this differnt from the browser default font size
+/// here we set the default font size to 10px
+// and then we use the default font size to 1.6rem and then we were using this
+
+// for example if you have a client that the client asks to change the font 
+// for that case if you set the default font size then you can easilyb change the font size and worked 
+// on it so we set and use the default font size
+
+$default-font-size: 1.6rem;
+
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
