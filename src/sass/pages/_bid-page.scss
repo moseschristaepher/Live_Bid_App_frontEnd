@@ -55,11 +55,11 @@
 .section--get--started {
     grid-column: 1 / 13;
 
-    padding: 0 6rem;
+    padding: 3rem 6rem;
 
-    background-color: rgb(224, 38, 38);
-    display: grid;
-    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+    background-color: black;
+    // display: grid;
+    // grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
 }
 
 .section--stay--connected {

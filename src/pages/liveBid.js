@@ -3,6 +3,7 @@ import DiscoverItemsComponent from "../components/containers/discover-items-comp
 import FeaturesBoxesComponent from "../components/containers/feature-boxes-component";
 // import OtherBidsComponent from "../components/containers/other-bids-component";
 import PopularItemsComponent from "../components/containers/popular-items-container";
+import ButtonComponent from "../components/reusable_components/button-component";
 // import TopBuyersComponent from "../components/containers/top-buyer-component";
 // import TopSellersComponent from "../components/containers/top-sellers-component";
 import HeadingTertiaryComponent from "../components/typography_components/heading_tertiary_component";
@@ -102,23 +103,27 @@ const BidPage = (props) => {
                     </div>
                     
                 </div>
-            </section>
+            </section> */}
 
             <section class="section--get--started">
                 <div class="get--started--container">
 
-                    <div class="get--started--container--box-1">
+                    <div class="get--started--container--box--1">
+
+                        <HeadingTertiaryComponent h3text= "Resources for getting started with Funto."/>
 
                     </div>
 
-                    <div class="get--started--container--box-2">
+                    <div class="get--started--container--box--2">
                         
+                        <ButtonComponent>Get started</ButtonComponent>
+
                     </div>
                     
                 </div>
             </section>
 
-            <section class="section--stay--connected">
+            {/* <section class="section--stay--connected">
                 <div class="stay--connected--container">
 
                     <div class="stay--connected--container--content">
