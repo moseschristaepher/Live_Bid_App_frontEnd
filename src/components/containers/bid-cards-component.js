@@ -4,7 +4,7 @@ import BidcardComponent from "../reusable_components/bid-card-component";
 
 const BidcardsComponent = (props) => {
     return (
-        <div class="bid-cards-component bid">
+        <div class="bid-cards-component">
 
             <BidcardComponent url= "https://designing-world.com/funto-v1.0.2/img/bg-img/9.jpg" avatarUrl= "https://designing-world.com/funto-v1.0.2/img/bg-img/u4.jpg" avatarh4text= "Fancy Car" avatarptext= "@fancy_car" ptext= "3 stock available"/>
 
