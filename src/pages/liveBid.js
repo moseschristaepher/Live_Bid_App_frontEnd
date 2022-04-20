@@ -12,7 +12,11 @@ import HeadingTertiaryComponent from "../components/typography_components/headin
 
 
 
+
+
 const BidPage = (props) => {
+
+
     return (
         <div class="container">
             <section class="section--liveBid">
@@ -148,5 +152,7 @@ const BidPage = (props) => {
         </div>
     )
 }
+
+
 
 export default BidPage;

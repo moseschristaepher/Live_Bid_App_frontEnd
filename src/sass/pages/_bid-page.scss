@@ -6,6 +6,27 @@
     background-color: #030205;
     display: grid;
     grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+
+    @media only screen and (max-width: 1050px) {
+
+        padding: 3rem 6rem;
+
+        
+    }
+
+    @media only screen and (max-width: 981px) {
+
+        padding: 2rem 3rem;
+
+        
+    }
+
+    @media only screen and (max-width: 720px) {
+
+        padding: 2rem 1.5rem;
+
+        
+    }
 }
 
 .section--features {
@@ -30,6 +51,35 @@
     // background-color: rgb(224, 38, 146);
     display: grid;
     grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+
+
+    @media only screen and (max-width: 1120px) {
+
+        padding: 5rem 3rem;
+
+        
+    }
+
+    @media only screen and (max-width: 904px) {
+
+        padding: 5rem 1.5rem;
+
+        
+    }
+
+    @media only screen and (max-width: 830px) {
+
+        padding: 5rem .3rem;
+
+    }
+
+    @media only screen and (max-width: 830px) {
+
+        padding: 5rem 0;
+
+        
+    }
+
 }
 
 .section--discoverItem {
@@ -40,6 +90,34 @@
     background-color:  #1f0757;
     display: grid;
     grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+
+    @media only screen and (max-width: 1050px) {
+
+        padding: 5rem 6rem;
+
+        
+    }
+
+    @media only screen and (max-width: 980px) {
+
+        padding: 3rem 4rem;
+
+        
+    }
+
+    @media only screen and (max-width: 866px) {
+
+        padding: 2rem 2rem;
+
+        
+    }
+
+    @media only screen and (max-width: 830px) {
+
+        padding: 5rem 0;
+
+        
+    }
 }
 
 .section--otherbid {

@@ -1,5 +1,30 @@
 .feature--boxes--component {
     display: flex;
     justify-content: space-between;
+
+    flex-wrap: wrap;
+
     align-items: center;
+
+
+    @media only screen and (max-width: 705px) {
+
+        flex-direction: column;
+        
+    }
+}
+
+
+.feature--boxes--component > div{
+
+    @media only screen and (max-width: 1244px) {
+
+        // justify-content: center;
+
+        // margin-right: auto;
+
+        margin-bottom: 2.2rem;
+
+    }
+
 }

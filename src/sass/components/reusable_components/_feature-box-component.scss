@@ -12,6 +12,40 @@
     width: 23%;
     padding: 2rem;
 
+    @media only screen and (max-width: 1244px) {
+
+        width: 45%;
+
+        padding: 2.8rem;
+        
+    }
+
+    @media only screen and (max-width: 730px) {
+
+        width: 48%;
+
+        padding: 2.8rem;
+        
+    }
+
+    @media only screen and (max-width: 705px) {
+        
+        width: 70%;
+        
+    }
+
+    @media only screen and (max-width: 680px) {
+
+        width: 92%;
+        
+    }
+
+    @media only screen and (max-width: 450px) {
+
+        width: 100%;
+        
+    }
+
 
     border: solid 1px #404040;
     border-radius: 2rem;

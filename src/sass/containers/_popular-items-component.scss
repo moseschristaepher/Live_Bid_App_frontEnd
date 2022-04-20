@@ -8,10 +8,69 @@
 
     flex-wrap: wrap;
 
+    @media only screen and (max-width: 1244px) {
+
+        justify-content: center;
+
+    }
+
+    @media only screen and (max-width: 825px) {
+
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 100%;
+
+        // margin: 0 auto;
+
+
+    }
+
+
 }
 
 .popular--items--component > div{
     
     margin-bottom: 1.5rem;
+
+
+    @media only screen and (max-width: 1244px) {
+
+        margin-right: 1.8rem;
+
+        margin-bottom: 1.8rem;
+
+    }
+
+    @media only screen and (max-width: 825px) {
+
+        align-content: center;
+        // justify-content: center;
+
+        margin: 1rem auto;
+
+        width: 56%;
+        padding: 2rem;
+
+    }
+
+    @media only screen and (max-width: 630px) {
+
+        width: 65%;
+        padding: 2rem;
+        
+    }
+
+    @media only screen and (max-width: 680px) {
+
+        width: 76%;
+        
+    }
+
+    @media only screen and (max-width: 450px) {
+
+        width: 77%;
+        
+    }
 
 }

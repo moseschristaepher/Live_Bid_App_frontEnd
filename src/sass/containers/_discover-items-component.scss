@@ -7,10 +7,56 @@
 
     flex-wrap: wrap;
 
+    @media only screen and (max-width: 1244px) {
+
+        justify-content: center;
+
+    }
+
+    @media only screen and (max-width: 610px) {
+
+        flex-direction: column;
+        
+        align-content: center;
+        // justify-content: center;
+
+        margin: 1rem auto;
+
+        
+    }
+
 }
 
 .discover--items--component > div{
     
     margin-bottom: 1.5rem;
+
+    @media only screen and (max-width: 1244px) {
+
+        // justify-content: center;
+
+        margin-right: 2rem;
+
+        margin-bottom: 2.2rem;
+
+    }
+
+    @media only screen and (max-width: 1190px) {
+
+        // justify-content: center;
+
+        margin-right: 2.2rem;
+
+        margin-bottom: 2.4rem;
+
+    }
+
+    @media only screen and (max-width: 1050px) {
+
+        margin-right: 2.2rem;
+
+        margin-bottom: 2.4rem;
+        
+    }
 
 }
