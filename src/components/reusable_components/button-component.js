@@ -6,7 +6,7 @@ const ButtonComponent = (props) => {
     return (
         <div class="button--component">
 
-            <a href="#" class="button--component">{props.children}</a>
+            <button href="#" onClick= {props.clicked} class="button--component">{props.children}</button>
 
         </div>
     )

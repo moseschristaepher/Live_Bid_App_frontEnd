@@ -48,7 +48,7 @@ const BidcardComponent = (props) => {
 
             <div class="bid--card--component--box--4">
 
-                <ButtonComponent>Place Bid</ButtonComponent>
+                <ButtonComponent clicked= {props.clicked}>Place Bid</ButtonComponent>
 
             </div>
 

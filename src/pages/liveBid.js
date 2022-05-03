@@ -1,6 +1,7 @@
 import BidcardsComponent from "../components/containers/bid-cards-component";
 import DiscoverItemsComponent from "../components/containers/discover-items-component";
 import FeaturesBoxesComponent from "../components/containers/feature-boxes-component";
+import HeaderComponent from "../components/containers/header-component";
 // import OtherBidsComponent from "../components/containers/other-bids-component";
 import PopularItemsComponent from "../components/containers/popular-items-container";
 import ButtonComponent from "../components/reusable_components/button-component";
@@ -10,27 +11,86 @@ import HeadingTertiaryComponent from "../components/typography_components/headin
 
 
 
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { addCountNumber, fetchCurrentUser, fetchLiveBidData, userLogout } from "../actions";
+
 
 
 
 
 const BidPage = (props) => {
 
+    useEffect(() => {
+        props.fetchLiveBidData();
+    }, [])
+
+    useEffect(() => {
+        props.fetchCurrentUser({}, props.currentUserProfileData.userId);
+    }, [props.currentUserProfileData.userId])
+
+    if (!props.isUserLoginedData) {
+        return (
+        <div>
+            <h1>
+                Loading.....
+            </h1>
+        </div>
+        )
+    }
+
+    const redirectToLogin = async () => {
+
+        if (!props.isUserLoginedData.isUserAuthenticated) {
+
+                props.history.push("/auth/userLogin")
+
+        } else {
+
+            await props.userLogout();
+            props.history.push("/")
+
+
+        }
+
+    }
+
+
+    const addCountNumberClickhandler = () => {
+        props.addCountNumber()
+    }
+
+
 
     return (
         <div class="container">
+            <section class= "section--liveBid--header">
+                <div class="livebid--header--container">
+
+                    <HeaderComponent  avatarUrl= "https://designing-world.com/funto-v1.0.2/img/bg-img/u4.jpg"
+                                      ptext= {props.currentUserProfileData?.payload?.currentUser?.userFirstName}
+                                      clicked= {redirectToLogin}
+                                      currentUserId= {props.isUserLoginedData.userId}
+                                      totalCount= {props.totalValue}
+                                      userLoginData= {props.isUserLoginedData}
+                     />
+
+                </div>
+
+
+            </section>
             <section class="section--liveBid">
                 <div class="livebid--container">
 
                     <div class="livebid--container--box--1 u-margin-bottom-small">
-
+                        
                         <HeadingTertiaryComponent  h3text= "Live Bid"/>
 
                     </div>
 
                     <div class="livebid--container--box--2">
 
-                        <BidcardsComponent />
+                        <BidcardsComponent  clicked = {addCountNumberClickhandler}/>
 
                     </div>
 
@@ -153,6 +213,16 @@ const BidPage = (props) => {
     )
 }
 
+const mapStateToProps = (state) => {
+    return {
+        totalValue: state.totalCountedValue.totalValue,
+        isUserLoginedData: state.isUserLogined,
+        currentUserProfileData: state.currentUserProfile
+
+    };
+};
 
 
-export default BidPage;
+
+
+export default connect(mapStateToProps, { addCountNumber, fetchLiveBidData, fetchCurrentUser, userLogout })(BidPage);

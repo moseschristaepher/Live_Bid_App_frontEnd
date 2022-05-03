@@ -1,0 +1,30 @@
+
+
+export const ADD_COUNT = 'ADD_COUNT';
+
+export const FETCH_LIVE_BID_DATA = 'FETCH_LIVE_BID_DATA';
+
+
+////// AUTH DATA //////
+export const USER_AUTH_SUCCESS = 'USER_AUTH_SUCCESS';
+export const USER_AUTH_FAIL = 'USER_AUTH_FAIL';
+
+export const USER_LOGOUT = 'USER_LOGOUT';
+
+
+////// FETCH CURRENT USER //////
+export const FETCH_CURRENT_USER = 'FETCH_CURRENT_USER';
+
+///// UPDATE THE CURRENT USER /////
+export const UPDATE_CURRENT_USER = 'UPDATE_CURRENT_USER';
+
+export const UPDATE_CURRENT_USER_FAIL = 'UPDATE_CURRENT_USER_FAIL';
+
+
+////// ERRORS FROM SERVERS ////////////
+export const ERRORS_FROM_SERVER = 'ERRORS_FROM_SERVER';
+
+
+///// CHECK USER AUTH STATE //////////
+////// WHETHER THE USER TOKEN IS EXPIRE OR NOT //////
+export const CHECK_USER_SIGN_IN = 'CHECK_USER_SIGN_IN';

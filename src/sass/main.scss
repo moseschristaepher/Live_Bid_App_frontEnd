@@ -28,9 +28,13 @@
 
 @import "pages/bid-page";
 
+@import "pages/login-page";
+
 //// CONTAINER /////////////
 
 @import "containers/live-bid-container";
+
+@import "containers/live-bid-header-container";
 
 @import "containers/features-container";
 
@@ -51,6 +55,10 @@
 @import "containers/otherbid-container";
 
 @import "containers/get-started-container";
+
+@import "containers/login--form--component";
+
+@import "containers/header-component";
 
 ///////// REUSABLE COMPONENTS ///////////////
 
@@ -77,3 +85,7 @@
 @import "components/reusable_components/bid-badge-component";
 
 @import "components/reusable_components/discover-item-component";
+
+
+////////
+@import "components/reusable_components/user-profile-info";

@@ -1,3 +1,18 @@
+.section--liveBid--header {
+
+    grid-column: 1 / 13;
+
+    padding: .2rem 5rem;
+
+    // background-color: #5815dd;
+    background-color: #030205;
+
+    display: grid;
+    grid-template-columns:  [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end];
+
+}
+
+
 .section--liveBid {
     grid-column: 1 / 13;
 

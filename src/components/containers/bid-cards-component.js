@@ -6,7 +6,7 @@ const BidcardsComponent = (props) => {
     return (
         <div class="bid-cards-component">
 
-            <BidcardComponent url= "https://designing-world.com/funto-v1.0.2/img/bg-img/9.jpg" avatarUrl= "https://designing-world.com/funto-v1.0.2/img/bg-img/u4.jpg" avatarh4text= "Fancy Car" avatarptext= "@fancy_car" ptext= "3 stock available"/>
+            <BidcardComponent url= "https://designing-world.com/funto-v1.0.2/img/bg-img/9.jpg" avatarUrl= "https://designing-world.com/funto-v1.0.2/img/bg-img/u4.jpg" avatarh4text= "Fancy Car" avatarptext= "@fancy_car" ptext= "3 stock available"  clicked= {props.clicked}/>
 
             <BidcardComponent url= "https://designing-world.com/funto-v1.0.2/img/bg-img/10.jpg" avatarUrl= "https://designing-world.com/funto-v1.0.2/img/bg-img/u1.jpg" avatarh4text= "Animal Playing with Guiter" avatarptext= "@creative_world" ptext= "11 stock available"/>
 

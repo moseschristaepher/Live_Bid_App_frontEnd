@@ -6,7 +6,7 @@ const ButtonSmallComponent = (props) => {
     return (
         <div class="button--small--component">
 
-            <a href="#" class="button--small">{props.children}</a>
+            <button href="#" class="button--small--component">{props.children}</button>
 
         </div>
     )

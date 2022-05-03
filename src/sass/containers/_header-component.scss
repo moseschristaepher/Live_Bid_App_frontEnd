@@ -1,0 +1,22 @@
+
+
+
+.header--component {
+
+
+    height: 8rem;
+
+    display: flex;
+
+    // flex: 0 0 100%;
+
+    margin-left: auto;
+
+
+    align-items: center;
+    // justify-content: flex-end;
+
+    &--box--3 {
+        justify-self: flex-end;
+    }
+}
