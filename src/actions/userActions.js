@@ -7,6 +7,8 @@ import {
 import jsonPlaceholder from "../apis/jsonPlaceholder";
 import { errorsFromServer } from "./errorsFromServerActions";
 
+import history from "../reducers/history";
+// import { NavLink } from "react-router-dom";
 
 
 
@@ -30,6 +32,11 @@ import { errorsFromServer } from "./errorsFromServerActions";
           type: UPDATE_CURRENT_USER,
           payload: response.data
       });
+
+      // return <Redirect to= "/" />
+
+      return history.push("/")
+      
 
     } catch (error) {
       const message =
@@ -57,6 +64,7 @@ import { errorsFromServer } from "./errorsFromServerActions";
 
       const response = await jsonPlaceholder.post(`/auth/myAccount`, {...body, Authorization});
     
+      console.log(response.data)
       dispatch({
           type: FETCH_CURRENT_USER,
           payload: response.data,
@@ -79,7 +87,7 @@ import { errorsFromServer } from "./errorsFromServerActions";
   }
 
 
-  //////////// USER UPDATE FAIL ///////////////////////////////
+//////////// USER UPDATE FAIL ///////////////////////////////
 export const updateCurrentUserFail = (error) => async dispatch => {
 
   dispatch({ type: UPDATE_CURRENT_USER_FAIL, error: error})

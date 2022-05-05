@@ -35,9 +35,7 @@ export const fetchLiveBidData = (formValues, userId)=> async (dispatch) =>{
 
     } else {
 
-        history.push('/auth/userLogin')
-
-        window.location.reload(false)
+        return history.push('/auth/userLogin')
 
     }
   };

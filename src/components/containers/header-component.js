@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ButtonComponent from "../reusable_components/button-component";
 import UserProfileInfoComponent from "../reusable_components/user-profile-component";
@@ -28,12 +29,12 @@ const HeaderComponent = (props) => {
                     {props.userLoginData.isUserAuthenticated ? (
 
 
-                            <Link to ={`/auth/myAccount`}>
+                            <NavLink to ={`/auth/myAccount`}>
                                 <UserProfileInfoComponent  
                                         ptext= {props.ptext} 
                                         avatarUrl= {props.avatarUrl}
                                 />
-                            </Link>
+                            </NavLink>
                         )
 
                     : null }

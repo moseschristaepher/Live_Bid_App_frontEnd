@@ -1,5 +1,4 @@
-import { CHECK_USER_SIGN_IN, USER_AUTH_FAIL, USER_AUTH_SUCCESS, USER_LOGOUT } from "./types";
-
+import { CHECK_USER_SIGN_IN, USER_AUTH_FAIL, USER_AUTH_START, USER_AUTH_SUCCESS, USER_LOGOUT } from "./types";
 
 
 import jsonPlaceholder from "../apis/jsonPlaceholder";
@@ -17,7 +16,9 @@ export const userLogout = (formValues, userId)=> async (dispatch) =>{
 
     dispatch({ type: USER_LOGOUT })
 
-    document.location.href = '/'
+    return history.replace("/")
+
+    // document.location.href = '/'
 
 
 };
@@ -45,12 +46,13 @@ export const userLogin = (formValues, userId)=> async (dispatch) =>{
   
         dispatch(userAuthSuccess(userToken, userId, { isUserAuthenticated: response?.data?.isUserAuthenticated }));
   
-        document.location.href = '/'
+        return history.push("/")
+        // document.location.href = '/'
   
   
         } else {
   
-            history.push('/login')
+            return history.push('/auth/userLogin')
   
         }
   
@@ -65,6 +67,15 @@ export const userLogin = (formValues, userId)=> async (dispatch) =>{
   
     }
   
+};
+
+
+
+//////////// USER AUTH START ////////////////
+
+export const userAuthStart = () => async dispatch => {
+
+    await dispatch({ type: USER_AUTH_START })
 };
   
   

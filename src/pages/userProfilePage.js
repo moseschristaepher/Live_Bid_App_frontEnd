@@ -7,6 +7,8 @@ import HeadingTertiaryComponent from '../components/typography_components/headin
 
 import { connect } from 'react-redux';
 import { fetchCurrentUser, updateCurrentUser } from '../actions';
+import history from '../reducers/history';
+
 
 
 const UserInfoForm = (props) => {
@@ -22,9 +24,8 @@ const UserInfoForm = (props) => {
 
 
     const onSubmit = async (formValues) => {
-        await props.updateCurrentUser(formValues, props.currentUserProfileUserIdData.userId);
 
-        // document.location.href = '/'
+        await props.updateCurrentUser(formValues, props.currentUserProfileUserIdData.userId);
 
     };
 
@@ -36,6 +37,11 @@ const UserInfoForm = (props) => {
             </h1>
         </div>
         )
+    }
+
+    if (!props.currentUserProfileData?.isCurrentUserAuthenticated) {
+
+        history.push("/auth/userLogin")
     }
 
     console.log(props?.currentUserProfileData?.errot)
@@ -95,18 +101,20 @@ const UserInfoForm = (props) => {
 
                                 <div class="login--form--component--box--4">
 
-                                    {/* <Link to="/"> */}
+                                    {/* <Redirect to="/" replace> */}
+
+                                    {/* <NavLink to='/' replace  > */}
 
                                         <ButtonComponent>Update Now</ButtonComponent>
 
-                                    {/* </Link> */}
+                                    {/* </NavLink> */}
+                                    {/* </Redirect> */}
 
                                 </div>
 
                             </div>
 
                         </form>
-
                     </div>
 
                 </div>

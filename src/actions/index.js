@@ -1,15 +1,8 @@
-import { 
-    FETCH_MAP_DATA, 
- } from "./types";
-
-
-import jsonPlaceholder from "../apis/jsonPlaceholder";
-
-
 
 export {
   userLogout,
   userLogin,
+  userAuthStart,
   userAuthSuccess,
   userAuthFail,
   checkUserSignIn

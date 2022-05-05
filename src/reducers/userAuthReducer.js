@@ -1,5 +1,6 @@
 import { 
     USER_AUTH_FAIL, 
+    USER_AUTH_START, 
     USER_AUTH_SUCCESS, 
     USER_LOGOUT } from "../actions/types";
 
@@ -13,6 +14,12 @@ import {
     userName: null,
     loading: false
 }
+
+const userAuthStartHandler = (state, action) => {
+    return { ...state,  
+        loading: true  
+    };
+};
 
 const userAuthSuccessHandler = (state, action) => {
     return { ...state,  
@@ -49,6 +56,8 @@ export default (state = INITIAL_STATE, action) => {
         default: 
             return state;
 
+        case USER_AUTH_START:
+            return userAuthStartHandler(state, action);
         case USER_AUTH_SUCCESS:
             return userAuthSuccessHandler(state, action);
 

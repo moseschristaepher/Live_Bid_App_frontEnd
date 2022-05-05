@@ -5,7 +5,8 @@ export const ADD_COUNT = 'ADD_COUNT';
 export const FETCH_LIVE_BID_DATA = 'FETCH_LIVE_BID_DATA';
 
 
-////// AUTH DATA //////
+////// AUTH  //////
+export const USER_AUTH_START = 'USER_AUTH_START';
 export const USER_AUTH_SUCCESS = 'USER_AUTH_SUCCESS';
 export const USER_AUTH_FAIL = 'USER_AUTH_FAIL';
 

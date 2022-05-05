@@ -14,10 +14,13 @@ const INITIAL_STATE = {
 
 const fetchCurrentUserHandler = (state, action) => {
     
+    console.log(action.payload)
+    console.log("calling fetch current handler")
     return {...state,
         isCurrentUserAuthenticated: action.isCurrentUserAuthenticated,
         loading: false,
-        payload: action.payload
+        payload: action.payload,
+        userName: action.payload.currentUser.userFirstName
 
     }
 }

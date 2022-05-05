@@ -25,6 +25,7 @@ const BidPage = (props) => {
         props.fetchLiveBidData();
     }, [])
 
+
     useEffect(() => {
         props.fetchCurrentUser({}, props.currentUserProfileData.userId);
     }, [props.currentUserProfileData.userId])
@@ -39,7 +40,11 @@ const BidPage = (props) => {
         )
     }
 
-    const redirectToLogin = async () => {
+    console.log(props.currentUserProfileData)
+
+    const redirectToLogin = async (event) => {
+
+        // event.preventDefault()
 
         if (!props.isUserLoginedData.isUserAuthenticated) {
 

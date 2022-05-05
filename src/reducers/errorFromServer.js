@@ -1,9 +1,6 @@
 import { ERRORS_FROM_SERVER } from "../actions/types";
 
 
-
-
-
  const INITIAL_STATE = {
 
     serverError: null,
